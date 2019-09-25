@@ -44,14 +44,16 @@ WebDriver driver = DriverFactory.getWebDriver()
  * 5. Sakrivanje floating headera te prihvaćanje kolačića
  * */
 
-WebUI.executeJavaScript('var elem = document.querySelector(\'body > app-root:nth-child(3) > div:nth-child(2) > app-home:nth-child(2) > app-header-alt:nth-child(2) > header:nth-child(1)\'); elem.parentNode.removeChild(elem);', null, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.executeJavaScript('var elem = document.querySelector(\'body > app-root:nth-child(3) > div:nth-child(2) > app-home:nth-child(2) > app-header-alt:nth-child(2) > header:nth-child(1)\'); elem.parentNode.removeChild(elem);', null, FailureHandling.OPTIONAL)
 
-WebUI.executeJavaScript('var elem = document.querySelector(\'header.active\'); elem.parentNode.removeChild(elem);', null, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.executeJavaScript('var elem = document.querySelector(\'header.active\'); elem.parentNode.removeChild(elem);', null, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/XPath', [('a') : '(//a[starts-with(@class,\'link\') and contains(text(),\'I get it!\')])[1]']))
 
+WebUI.executeJavaScript('document.getElementById(\'wh-widget-send-button\').style.display = \'none\';', null, FailureHandling.OPTIONAL)
+
 /**
- * 6. Odrada screenshota
+ * 6. Odrada screenshota za svaku od rezolucija (rezolucijeZaProvjeru, 900)
  * */
 for (rezolucija in rezolucijeZaProvjeru) {
 	
