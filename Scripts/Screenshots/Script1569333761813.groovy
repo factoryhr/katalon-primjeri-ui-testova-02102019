@@ -28,7 +28,7 @@ import ru.yandex.qatools.ashot.screentaker.ViewportPastingStrategy as ViewportPa
  * */
 datotekaZaSpremanje = "C:\\Responsive\\"
 
-rezolucijeZaProvjeru = [320, 480, 768, 1024, 1280, 1366, 1440, 1920, 3840]
+rezolucijeZaProvjeru = [320, 480, 768, 1024, 1280, 1366, 1440, 1920]
 
 /**
  * 3. Otvaranje preglednika na određenoj lokaciji

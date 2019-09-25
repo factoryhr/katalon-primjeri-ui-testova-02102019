@@ -14,9 +14,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\workFlow\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Screenshots\\20190925_083018\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\workFlow\\AppData\\Local\\Temp\\Katalon\\Test Cases\\AdviseraCommunityJoinNow\\20190925_102017\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Screenshots', new TestCaseBinding('Test Cases/Screenshots',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/AdviseraCommunityJoinNow', new TestCaseBinding('Test Cases/AdviseraCommunityJoinNow',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
