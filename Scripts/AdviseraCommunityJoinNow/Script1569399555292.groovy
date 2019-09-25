@@ -77,6 +77,10 @@ WebUI.navigateToUrl('https://harakirimail.com/inbox/' + harakiriMailUser)
 
 WebUI.click(findTestObject('Object Repository/XPath', [('a') : '(//div[contains(text(),\'Please activate your Expert Advice Community account\')])[1]']))
 
+WebUI.scrollToElement(findTestObject('Object Repository/XPath', [('a') : '(//a[contains(text(),\'Verify account\')])[1]']), 0)
+
+Thread.sleep(1000)
+
 verifyAccountLink = WebUI.getAttribute(findTestObject('Object Repository/XPath', [('a') : '(//a[contains(text(),\'Verify account\')])[1]']), "href")
 
 WebUI.navigateToUrl(verifyAccountLink)
