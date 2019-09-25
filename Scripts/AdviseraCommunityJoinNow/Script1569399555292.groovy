@@ -12,23 +12,11 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+
 /**
  * 1. Import paketa koji su potrebni za odradu testa
  * */
-import javax.media.rtp.GlobalReceptionStats
-import javax.swing.JTable.ModelChange
 import java.util.concurrent.ThreadLocalRandom
-import static java.lang.Math.toIntExact
-
-/*
- * Registracija
- * Odlazak na lokaciju
- * Popunjavanje podataka
- * Otvaranje email-a i dohvaćanje linka
- * Otvaranje lokacije
- * Potvrda da smo ulogirani
- * 
- * */
 
 /**
  * 2. Varijable testa
