@@ -77,7 +77,7 @@ WebUI.navigateToUrl('https://harakirimail.com/inbox/' + harakiriMailUser)
 
 WebUI.click(findTestObject('Object Repository/XPath', [('a') : '(//div[contains(text(),\'Please activate your Expert Advice Community account\')])[1]']))
 
-WebUI.scrollToElement(findTestObject('Object Repository/XPath', [('a') : '(//a[contains(text(),\'Verify account\')])[1]']), 0)
+WebUI.scrollToElement(findTestObject('Object Repository/XPath', [('a') : '//img[1]']), 0)
 
 Thread.sleep(1000)
 
@@ -89,3 +89,4 @@ WebUI.navigateToUrl(verifyAccountLink)
  * 6. Potvrda da je registracija odrađena do kraja
  * */
 WebUI.verifyElementPresent(findTestObject('Object Repository/XPath', [('a') : '(//p[contains(text(),\'Thank you - your account is now confirmed\')])[1]']), 0)
+
