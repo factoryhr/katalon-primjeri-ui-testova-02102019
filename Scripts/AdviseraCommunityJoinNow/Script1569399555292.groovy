@@ -84,5 +84,4 @@ WebUI.navigateToUrl(verifyAccountLink)
 /**
  * 6. Potvrda da je registracija odrađena do kraja
  * */
-
 WebUI.verifyElementPresent(findTestObject('Object Repository/XPath', [('a') : '(//p[contains(text(),\'Thank you - your account is now confirmed\')])[1]']), 0)
